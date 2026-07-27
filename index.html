@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Técnico Locações - Grupo Espiral Engenharia</title>
+    <!-- Fonte moderna (Roboto/Open Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', Arial, sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+        }
+
+        /* Seção Principal (Hero Banner) */
+        .hero {
+            position: relative;
+            flex: 1;
+            width: 100%;
+            /* Espaço removido do caminho do arquivo */
+            background-image: url('./catalogo_locacoes.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px 60px;
+            color: #ffffff;
+            z-index: 1; 
+        }
+
+        /* Topo com a Logo */
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        .logo {
+            max-width: 320px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Conteúdo Central */
+        .content {
+            max-width: 650px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        /* Título com detalhe azul claro na esquerda */
+        .title-container {
+            border-left: 12px solid #0092a7;
+            padding-left: 20px;
+            margin-bottom: 40px;
+        }
+
+        .title-container h1 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ffffff;
+        }
+
+        .title-container h1 strong {
+            font-weight: 700;
+            display: block;
+        }
+
+        /* Botão estilizado com gradiente corrigido (#0092a7) */
+        .btn-acesse {
+            display: inline-block;
+            background: linear-gradient(180deg, #0092a70%, #0083b0 100%);
+            color: #ffffff;
+            font-size: 1.8rem;
+            font-weight: 700;
+            padding: 16px 48px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .btn-acesse:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
+            filter: brightness(1.1);
+        }
+
+        /* Rodapé de Texto */
+        .footer-text {
+            background-color: #ffffff;
+            color: #333333;
+            padding: 25px 60px;
+            text-align: justify;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            font-style: italic;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 20px;
+            }
+
+            .logo {
+                max-width: 150px;
+            }
+
+            .title-container h1 {
+                font-size: 2.2rem;
+            }
+
+            .btn-acesse {
+                font-size: 1.3rem;
+                padding: 12px 32px;
+            }
+
+            .footer-text {
+                padding: 20px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Seção Banner -->
+    <main class="hero">
+        <header class="header">
+            <!-- Espaço removido do src -->
+            <img src="logo_locacoes.png" alt="Grupo Espiral Engenharia" class="logo">
+        </header>
+
+        <section class="content">
+            <div class="title-container">
+                <!-- Erro de digitação corrigido: TÉCNICO -->
+                <h1>CATÁLOGO<br><strong>TÉCNICO LOCAÇÕES</strong></h1>
+            </div>
+            
+            <a href="catalogo_locacoes.pdf" class="btn-acesse" target="_blank">Acesse aqui</a>
+        </section>
+    </main>
+
+    <!-- Rodapé Descritivo -->
+    <footer class="footer-text">
+        <p>
+A Espiral Locações entrega soluções completas em engenharia de acesso, fôrmas e escoramentos para potencializar a eficiência e a segurança do seu canteiro de obras. Com um portfólio de locações que reúne a versatilidade dos andaimes Multiloc® e Fachadeiro LEV (conforme a NR 18), acompanhados por acessórios de segurança como o Kit de Acesso, escadas Vertical ESP e Patamar, Protesp, Rosácea Articulada e rodapé Rodesp. Para a etapa de moldagem e suporte, oferecemos a agilidade dos sistemas FormaEsp®, Formalev® e Multilev® para lajes, além de Torres de Carga, Escoras Metálicas, Trelivigas, cimbramentos e acessórios de precisão.
+
+        </p>
+    </footer>
